@@ -2,13 +2,10 @@
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open('offline-cache').then((cache) => {
-            console.log('Service Worker: Caching offline resources');
+            console.log('Service Worker: Caching offline page');
             return cache.addAll([
-                'offline.html',  // Halaman offline
-                'styles.css',    // Tambahkan CSS
-                'wlpprRRQ.jpg',  // Gambar background jika perlu
-                'rrq.jpeg',      // Gambar logo RRQ
-                '/'              // Halaman utama
+                'offline.html',  // Pastikan offline.html berada di lokasi yang benar
+                '/'  // Cache halaman utama juga (opsional)
             ]);
         })
     );
@@ -36,13 +33,7 @@ self.addEventListener('fetch', (event) => {
     console.log('Service Worker: Fetching');
     event.respondWith(
         caches.match(event.request).then((response) => {
-            // Jika ada respon di cache, tampilkan cache
-            if (response) {
-                return response;
-            }
-            
-            // Jika tidak ada, fetch dari jaringan, jika gagal, tampilkan halaman offline
-            return fetch(event.request).catch(() => caches.match('offline.html'));
+            return response || fetch(event.request).catch(() => caches.match('offline.html'));
         })
     );
 });
