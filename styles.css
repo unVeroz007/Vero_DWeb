@@ -1,0 +1,152 @@
+*{
+    font-family: tahoma;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(wlpprRRQ.jpg);
+    background-size: 100%;
+}
+
+.list li a{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.list li{
+    font-size: larger;
+    display: inline;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.list li :hover{
+    background-color:gold;
+}
+
+.list li img{
+    float: inline-end;
+    padding: left 0; ;
+    width: 5vh;
+}
+
+.header {
+    background-color:chocolate;
+    padding: 20px;
+    width: 100vw;
+}
+
+.isi{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.isi h3, h4{
+    padding: 15px;
+}
+
+.isi .foto a p{
+    font-size: larger;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.footer{
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    width: 100vw;
+}
+
+#sosmed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sosmed p img{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#sosmed p{
+    margin: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#sosmed p a{
+    color:goldenrod;
+}
+
+.isi .maker img{
+    padding-top: 10px;
+    width: 20vh;
+    border-radius: 20px;
+}
+
+.bg{
+    background-color: aliceblue;
+}
+
+.pwa{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pwa ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#contact-form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.isi .foto img{
+    width: 100vh;
+    padding: 20px;
+}
+
+
+
+
+
+

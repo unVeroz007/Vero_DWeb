@@ -1,0 +1,41 @@
+{
+    "id": "/",
+    "name": "Galid",
+    "short_name": "MGA",
+    "start_url": "/",
+    "display":"standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+
+        }        
+    ],
+    "screenshots": [
+        {
+          "src": "mobile-1.png",
+          "sizes": "341x667",
+          "type": "png"
+        },
+        {
+          "src": "bg-w.png",
+          "sizes": "1280x632",  
+          "type": "png",
+          "form_factor": "wide" 
+        }
+      ],
+    
+      "orientation": "any",
+      "lang": "en-US"
+    }
+  

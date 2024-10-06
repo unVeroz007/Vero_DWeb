@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="apps.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+            <ul class="list">
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="about.html"> ABOUT </a></li>
+                <li><a href="contact.html"> CONTACT </a></li>
+                <li><img src="rrq.jpeg" alt="our logo"></li>
+            </ul>
+        </div>
+
+        <div class="isi">
+            <div id="sosmed"> 
+            <h1>Kontak Kami</h1>
+            <h2>Masalah IT siap diselesaikan</h2>
+                <p >
+                    <img src="IG.webp" alt="Instagram"> 
+                    <a href="https://www.instagram.com/mgalidav.r?igsh=Zms5M3ZndHlkeWd1">Instagram</a>
+                </p>
+    
+                <p>
+                    <img src="WA.png" alt="WhatsApp"> 
+                    <a href="https://wa.me/qr/2J266LVTUIWGN1">WhatsApp</a>
+                </p>
+                
+            </div>
+
+            <nav class="maker">
+                <img src="almet.jpeg" alt="pembuat">
+            </nav>
+
+            <div>
+                <form id="contact-form">
+                    <table>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Masukkan email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nama">Nama:</label></td>
+                            <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tanggal">Tanggal:</label></td>
+                            <td><input type="date" id="tanggal" name="tanggal" required></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input type="radio" name="gender" value="laki-laki" id="laki-laki">
+                                <label for="laki-laki">Laki-laki</label>
+                                <input type="radio" name="gender" value="perempuan" id="perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="kategori">Kategori Pesan:</label></td>
+                            <td>
+                                <select name="kategori">
+                                    <option value="">Pilih Kategori</option>
+                                    <option value="saran">Saran</option>
+                                    <option value="kritik">Kritik</option>
+                                    <option value="pertanyaan">Pertanyaan</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pesan:</td>
+                            <td><textarea name="pesan" cols="30" rows="5" placeholder="Masukkan Pesan" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="reset" value="Reset">
+                                <input type="button" onclick="showAlert()" value="Kirim">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>Made by : Muhammad Galid Avero</h3>
+            <h3>NIM : 2311532008 </h3>
+            <h3> Proyek UTS DWEB</h3>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+        const form = document.getElementById("contact-form");
+
+        if (!form.checkValidity()) {
+            alert("Anda mengirim apa?? Isi form dengan lengkap.");
+            return;
+        }
+
+        alert("Pesan terkirim!");
+        form.reset();
+        }
+    </script>
+</body>
+</html>

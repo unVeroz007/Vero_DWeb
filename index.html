@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="apps.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="list">
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="about.html"> ABOUT </a></li>
+                <li><a href="contact.html"> CONTACT </a></li>
+                <li><img src="rrq.jpeg" alt="our logo"></li>
+            </ul>
+        </div>
+
+        <div class="isi">
+            <h1>Selamat datang di website RRQ X Avero</h1>
+            <h3>hello kingdom, cuman buat belajar yaa</h3>
+            <h4>RRQ JUARA M6 AAMIIN</h4>
+        </div>
+
+        <div class="bg">
+            <div class="pwa">
+                <h3>APA ITU PWA??</h3>
+                <p>
+                    Progressive Web App (PWA) adalah aplikasi web yang dikembangkan dengan teknologi web modern namun menawarkan pengalaman seperti aplikasi native. PWA bisa diakses melalui browser tetapi memiliki kemampuan layaknya aplikasi yang diinstal di perangkat.
+                </p>
+                <br>
+                <h3>Fitur PWA</h3>
+                <ul>
+                    <li>
+                        <strong>Responsif:</strong> Berfungsi dengan baik di berbagai ukuran layar dan perangkat
+                    </li>
+                    <li>
+                        <strong>Offline:</strong> Menggunakan Service Worker untuk menyimpan data sehingga bisa diakses tanpa koneksi internet
+                    </li>
+                    <li>
+                        <strong>Installable:</strong> Bisa diinstal langsung dari browser tanpa perlu melalui app store
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+        <div class="footer">
+            <h3>Made by : Muhammad Galid Avero</h3>
+            <h3>NIM : 2311532008 </h3>
+            <h3> Proyek UTS DWEB</h3>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('service-worker.js') // Ganti dengan path yang sesuai
+              .then(registration => {
+                  console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch(error => {
+                  console.log('Service Worker registration failed:', error);
+              });
+         });
+        }
+    </script>
+</body>
+</html>
